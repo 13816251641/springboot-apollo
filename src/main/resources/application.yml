@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+app:
+  id: springboot-apollo   #springboot-apollo
+apollo:
+  meta: http://106.12.13.244:8080
+  bootstrap:
+    enabled: true
+    #谁写在前面,谁就配置就会覆盖后面的(在有冲突的场景下!!!)
+    namespaces: application,datasource,TEST1.common
