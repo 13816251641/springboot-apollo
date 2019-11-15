@@ -8,4 +8,4 @@ apollo:
   bootstrap:
     enabled: true
     #谁写在前面,谁就配置就会覆盖后面的(在有冲突的场景下!!!)
-    namespaces: application,datasource,TEST1.common
+    namespaces: TEST1.common,datasource,application
