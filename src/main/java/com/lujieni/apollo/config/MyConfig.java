@@ -13,13 +13,16 @@ import org.springframework.context.annotation.Configuration;
 @Slf4j
 public class MyConfig {
     @Value("${name}")
-    private String name;
+    public void setName(String name){
+        System.out.println(name);
+    }
 
-    @Bean
+
+/*    @Bean
     public String getString(){
       log.info(name);
       return name;
-    }
+    }*/
 
 
 
