@@ -12,18 +12,27 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Slf4j
 public class MyConfig {
+
+    private String name;
+
+    private String age;
+
     @Value("${name}")
-    public void setName(String name){
-        System.out.println(name);
+    public void setName(String apolloValue){
+        System.out.println(apolloValue);
+        this.name = apolloValue;
     }
 
+    @Value("${age}")
+    public void setAge(String apolloValue){
+        System.out.println(apolloValue);
+        this.age = apolloValue;
+    }
 
-/*    @Bean
+    @Bean
     public String getString(){
       log.info(name);
+      log.info(age);
       return name;
-    }*/
-
-
-
+    }
 }

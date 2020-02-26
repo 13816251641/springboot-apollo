@@ -4,8 +4,8 @@ server:
 app:
   id: 110   #springboot-apollo
 apollo:
-  meta: http://106.12.13.244:8080
   bootstrap:
     enabled: true
-    #谁写在前面,谁就配置就会覆盖后面的(在有冲突的场景下!!!)
-    namespaces: TEST1.common,application #TEST1.common,datasource,application
+    #注意+s,谁写在前面,谁就配置就会覆盖后面的(在有冲突的场景下!!!)
+    namespaces: application,datasource #TEST1.common,application
+  meta: http://192.168.247.130:8080 #Eureka地址
