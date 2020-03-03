@@ -17,6 +17,8 @@ public class MyConfig {
 
     private String age;
 
+    private String salary;
+
     @Value("${name}")
     public void setName(String apolloValue){
         System.out.println(apolloValue);
@@ -29,10 +31,17 @@ public class MyConfig {
         this.age = apolloValue;
     }
 
+    @Value("${salary}")
+    public void setSalary(String apolloValue){
+        System.out.println(apolloValue);
+        this.salary = apolloValue;
+    }
+
     @Bean
     public String getString(){
       log.info(name);
       log.info(age);
+      log.info(salary);
       return name;
     }
 }

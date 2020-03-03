@@ -7,5 +7,5 @@ apollo:
   bootstrap:
     enabled: true
     #注意+s,谁写在前面,谁就配置就会覆盖后面的(在有冲突的场景下!!!)
-    namespaces: application,datasource #TEST1.common,application
+    namespaces: application,datasource,origin
   meta: http://192.168.247.130:8080 #Eureka地址
